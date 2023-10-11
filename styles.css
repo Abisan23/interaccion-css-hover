@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+.marco {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+
+}
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.c1:hover {
+    transform: translate(150px, 150px);
+}
+
+.c2:hover {
+    transform: translate(-150px, 150px);
+}
+
+.c3:hover {
+    transform: translate(150px, -150px);
+}
+
+.c4:hover {
+    transform: translate(-150px, -150px);
+}
